@@ -25,3 +25,7 @@ para os dados de apresentação.
   - Fazer o bind entre Model/View (inicializando a view)
   - Adicionando pequenos helpers para a view.
   - Todo controller tem acesso ao `$scope`
+
+##### Factories
+
+-
