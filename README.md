@@ -11,5 +11,5 @@ para os dados de apresentação.
 - Diretivas são formas de extender o comportamento do HMTML.
 - `ng-app='myApp'` = Define que a aplicação irá usar AngularJS.
 - `ng-controller` = Irá determinar onde determinado Controller irá interagir, uma app angular pode ter vários Controllers e cada um deles ter seu escopo definido
- para determinadas partes da app. Por exemplo, um arquivo chamado `inbox.html` contendo o código abaixo irá fornecer a responsabilidade ao `InboxCrtl`, (example_01).
+ para determinadas partes da app. Por exemplo, um arquivo chamado `inbox.html` contendo o código abaixo irá fornecer a responsabilidade ao `InboxCtrl`, (example_01).
 
