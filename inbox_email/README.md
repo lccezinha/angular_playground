@@ -25,3 +25,9 @@ para os dados de apresentação.
   - Fazer o bind entre Model/View (inicializando a view)
   - Adicionando pequenos helpers para a view.
   - Todo controller tem acesso ao `$scope`
+
+##### Factories
+
+- Comumente usadas são para comunicação server-side via HTTP
+- Abstrações dos Models para persistir o estado da aplicação
+- São bons para construir código reusável
