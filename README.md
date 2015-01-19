@@ -12,4 +12,8 @@ para os dados de apresentação.
 - `ng-app='myApp'` = Define que a aplicação irá usar AngularJS.
 - `ng-controller` = Irá determinar onde determinado Controller irá interagir, uma app angular pode ter vários Controllers e cada um deles ter seu escopo definido
  para determinadas partes da app. Por exemplo, um arquivo chamado `inbox.html` contendo o código abaixo irá fornecer a responsabilidade ao `InboxCtrl`, (example_01).
+- `ng-model` = Cria o data-biding entre view/model.
 
+##### Modulos
+
+- Toda app Angular possui seu módulo, que é um namespace da app, onde podem ser injetados as suas dependências, (example_02)
