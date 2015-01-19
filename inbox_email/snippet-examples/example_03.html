@@ -1,0 +1,7 @@
+<!-- JavaScript inside expression -->
+<h1>{{ [ firstName, lastName ].join(" ") }}</h1>
+<!-- currency filter applied to a multiplication of 2 numbers -->
+<div class="total-info">{{ cost * quantity | currency }}</div>
+<!-- Using a ternary expression inside the expression -->
+<div class="budget">{{ ( total > budget ) ? "Too Expensive" : "You can buy it!" }}</div>
+
