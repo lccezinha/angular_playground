@@ -23,6 +23,8 @@ var gems = [
     description: 'Blablazzzzzzzzz',
     canPurchase: true,
     soldOut: false,
-    images: [ ]
+    images: [
+      "images/ruby.png"
+    ]
   }
 ]
