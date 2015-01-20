@@ -1,8 +1,31 @@
 var app = angular.module('store', []);
 
 app.controller('StoreController', function() {
-  console.log(gems)
   this.products = gems;
+});
+
+app.controller('GalleryController', function(){
+  this.current = 0;
+
+  this.setCurrent = function(current){
+    if(current !== null){
+      this.current = current;
+    }else{
+      this.current = 0;
+    }
+  };
+});
+
+app.controller('PanelController', function() {
+  this.tab = 1;
+
+  this.selectTab = function(setTab) {
+    this.tab = setTab;
+  };
+
+  this.isSelected = function(checkTab){
+    return this.tab === checkTab;
+  };
 });
 
 var gems = [
@@ -14,7 +37,22 @@ var gems = [
     rarity: 7,
     color: '#CCC',
     faces: 14,
-    images: [ ]
+    images: [ ],
+    reviews:
+    [
+      {
+        stars: 5,
+        body: "I love this gem!",
+        author: "joe@example.org",
+        createdOn: 1397490980837
+      },
+      {
+        stars: 1,
+        body: "This gem sucks.",
+        author: "tim@example.org",
+        createdOn: 1397490980837
+      }
+    ]
   },
   {
     name: 'Bloodstone',
@@ -27,6 +65,21 @@ var gems = [
     images: [
       "images/ruby.png",
       "images/ruby-2.jpeg"
+    ],
+    reviews:
+    [
+      {
+        stars: 2,
+        body: "I love this gem!",
+        author: "joe@example.org",
+        createdOn: 1397490980837
+      },
+      {
+        stars: 3,
+        body: "This gem sucks.",
+        author: "tim@example.org",
+        createdOn: 1397490980837
+      }
     ]
   },
   {
@@ -40,6 +93,7 @@ var gems = [
     images: [
       "images/ruby-2.jpeg",
       "images/ruby.png"
-    ]
+    ],
+    reviews: []
   }
 ];
