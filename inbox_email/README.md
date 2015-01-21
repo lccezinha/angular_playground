@@ -28,4 +28,6 @@ para os dados de apresentação.
 
 ##### Factories
 
--
+- Comumente usadas são para comunicação server-side via HTTP
+- Abstrações dos Models para persistir o estado da aplicação
+- São bons para construir código reusável
