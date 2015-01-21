@@ -38,6 +38,20 @@ app.controller('ReviewController', function() {
   }
 });
 
+app.directive('productDescription', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'directives/product-description.html'
+  };
+});
+
+app.directive('productSpecs', function() {
+  return {
+    restrict: 'A',
+    templateUrl: 'directives/product-specs.html'
+  };
+})
+
 var gems = [
   {
     name: 'Azurite',
