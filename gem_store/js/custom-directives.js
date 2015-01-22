@@ -1,5 +1,12 @@
 var app = angular.module('custom-directives', [])
 
+app.directive('productNameAndPrice', function(){
+  return {
+    restrict: 'E',
+    templateUrl: 'directives/product-name-and-price.html'
+  };
+});
+
 app.directive('productDescription', function() {
   return {
     restrict: 'E',

@@ -4,9 +4,13 @@ app.controller('StoreController', ['$http', function($http) {
   var store = this;
   store.products = [];
 
-  $http.get('http://api.myjson.com/bins/3mi0z').success(function(data){
-    store.products.push(data);
-  }).error(function() { console.log('error!') });
+  $http.get('https://api.myjson.com/bins/3d3aj')
+    .success(function(data){
+      store.products.push(data);
+    })
+    .error(function() {
+      console.log('error!')
+    });
 }]);
 
 app.controller('ReviewController', function() {

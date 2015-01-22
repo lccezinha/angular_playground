@@ -11,10 +11,7 @@
       <div ng-controller="StoreController as store">
         <div class="list-group">
           <div class="list-group-item" ng-repeat="product in store.products">
-            <h3>
-              {{product.name}}
-              <em class="pull-right">{{product.price | currency }}</em>
-            </h3>
+            <product-name-and-price></product-name-and-price>
 
             <product-gallery></product-gallery>
 
